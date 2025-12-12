@@ -12,7 +12,7 @@ import Heading from "./Heading.astro";
             </a>
         </div>
         <div class="flex items-center gap-4">
-            <div :class="showmenu ? 'opacity-0 pointer-events-none' : 'opacity-100'" class="!transition-none">
+            <div :class="showmenu ? 'opacity-0 pointer-events-none' : 'opacity-100'" class="transition-none!">
                 <Button variant="primary">Støt Havet</Button>
             </div>
             <button id="burgermenu" x-on:click="showmenu = ! showmenu" class="flex flex-col gap-2.5 w-12 h-14 justify-center relative">
@@ -59,17 +59,17 @@ import Heading from "./Heading.astro";
                     <div class="mt-auto text-right">
                         <Heading htmlheading="h4" size="h4" stylingclasses="text-primary mb-4">FØLG OS PÅ <br> SOCIALE MEDIER</Heading>
                         <div class="flex gap-4 justify-end">
-                            <a href="#" target="_blank" rel="noopener noreferrer">
-                                <img src="/src/assets/images/fb.svg" alt="Facebook" class="w-10 h-10" />
+                            <a href="https://www.facebook.com/NorthNaturedk?locale=da_DK" target="_blank" rel="noopener noreferrer" class="transition-transform duration-200 hover:scale-110">
+                                <img src="/src/assets/images/fb.svg" alt="Facebook" class="w-10 h-10 transition duration-200 hover:brightness-110" />
                             </a>
-                            <a href="#" target="_blank" rel="noopener noreferrer">
-                                <img src="/src/assets/images/ig.svg" alt="Instagram" class="w-10 h-10" />
+                            <a href="https://www.instagram.com/northnaturedk/" target="_blank" rel="noopener noreferrer" class="transition-transform duration-200 hover:scale-110">
+                                <img src="/src/assets/images/ig.svg" alt="Instagram" class="w-10 h-10 transition duration-200 hover:brightness-110" />
                             </a>
-                            <a href="#" target="_blank" rel="noopener noreferrer">
-                                <img src="/src/assets/images/yt.svg" alt="YouTube" class="w-10 h-10" />
+                            <a href="https://www.youtube.com/channel/UCRnON5-mkcPwXEEfxZu8I-Q" target="_blank" rel="noopener noreferrer" class="transition-transform duration-200 hover:scale-110">
+                                <img src="/src/assets/images/yt.svg" alt="YouTube" class="w-10 h-10 transition duration-200 hover:brightness-110" />
                             </a>
-                            <a href="#" target="_blank" rel="noopener noreferrer">
-                                <img src="/src/assets/images/linkedin.svg" alt="LinkedIn" class="w-10 h-10" />
+                            <a href="https://linkedin.com/company/north-nature?originalSubdomain=dk" target="_blank" rel="noopener noreferrer" class="transition-transform duration-200 hover:scale-110">
+                                <img src="/src/assets/images/linkedin.svg" alt="LinkedIn" class="w-10 h-10 transition duration-200 hover:brightness-110" />
                             </a>
                         </div>
                     </div>
