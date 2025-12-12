@@ -4,6 +4,7 @@ import Link from "../components/Link.astro";
 import Heading from "../components/Heading.astro";
 import Text from "../components/Text.astro";
 import Button from "../components/Button.astro";
+const gradientUrl = "/gradient.png";
 ---
 <MainLayout title="North Nature">
 	<main class="overflow-hidden">
@@ -14,7 +15,7 @@ import Button from "../components/Button.astro";
 			</video>
 			
 			<div class="flex items-center justify-center absolute inset-0 z-0">
-				<img src="/src/assets/images/donegron.png" alt="North Nature" class="w-3/4 max-w-5xl" />
+				<img src="/src/assets/images/donegron.png" alt="North Nature" class="w-3/D4 max-w-5xl" />
 			</div>
 			
 			<div class="relative z-10 px-[8.333vw] w-full">
@@ -28,6 +29,84 @@ import Button from "../components/Button.astro";
 						<Button variant="primary">Registrer Spøgelsesnet</Button>
 					</div>
 				</div>
+			</div>
+		</section>
+
+		<section class="relative min-h-screen bg-cover bg-center bg-no-repeat flex items-center" style={`background-image: url('${gradientUrl}');`}>
+			<div class="absolute inset-0 bg-white/10"></div>
+
+			<div class="relative z-10 px-[8.333vw] py-20 lg:py-32 w-full">
+				<div class="max-w-3xl ml-auto text-secondary space-y-10 lg:mr-[6vw]">
+					<Heading htmlheading="h2" size="h2" stylingclasses="text-secondary">
+						Om NorthNature
+					</Heading>
+
+					<div class="space-y-6 leading-relaxed text-[1.125rem] font-body">
+						<p>North Nature er en nonprofit-organisation, der beskytter havmiljøet ved at fjerne de spøgelsesnet, som ligger skjult i danske farvande og udgør en massiv trussel mod havets dyreliv. Vores mission er klar: at stoppe de efterladte fiskenet gennem målrettet handling, solid forskning og politisk engagement, så problemet kan løses – ikke bare nu, men på lang sigt.</p>
+
+						<p>Arbejdet begyndte i Limfjorden, hvor mere end 6.700 net er blevet fjernet, og hvor vores egne 1.500 hævninger har skabt vigtig dokumentation af de skader, spøgelsesnet forårsager. Denne viden bruger vi aktivt i samarbejde med Miljøstyrelsen for at sikre politisk opbakning og en national strategi, der kan gøre en reel forskel for havmiljøet.</p>
+
+						<p>Gennem stærke partnerskaber med dykkere, forskere, myndigheder og virksomheder sætter vi konstant fokus på problemet – både under vandet og i offentligheden. Med undervandsoptagelser, mediedækning og aktiv inddragelse af samfundet viser vi, hvor presserende udfordringen er, og hvordan løsningerne ser ud. Vores mål er et sundt og bæredygtigt havmiljø uden skjulte farer.</p>
+					</div>
+
+					<div>
+						<a href="#!" class="inline-block border-2 border-secondary rounded-full px-8 py-3 font-body text-[1.125rem] uppercase tracking-wide text-secondary transition-all duration-300 hover:bg-secondary hover:text-primary">Læs mere om North Nature</a>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Wave Transition -->
+			<div class="absolute bottom-0 left-0 w-full overflow-hidden leading-[0] rotate-180">
+				<svg class="relative block w-full h-[80px] md:h-[120px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+					<path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="fill-background"></path>
+				</svg>
+			</div>
+		</section>
+
+		<!-- Vores Mission Section -->
+		<section class="relative min-h-screen bg-background flex items-center justify-center py-20 lg:py-32">
+			<div class="relative z-10 w-full flex flex-col items-center">
+				<Heading htmlheading="h1" size="h1" stylingclasses="text-secondary-800 mb-16 lg:mb-24 whitespace-nowrap">
+					VORES MISSION
+				</Heading>
+
+				<div class="flex flex-col gap-0 lg:gap-1 w-full max-w-6xl px-4">
+						<!-- Card 1 -->
+					<div class="relative rounded-3xl p-6 lg:p-8 flex flex-col justify-center items-center text-center space-y-3 min-h-80 lg:min-h-[380px] pt-28 lg:pt-32 w-full lg:w-[520px] self-start overflow-visible">
+						<img src="/card1.svg" alt="Fjerne spøgelsesnet" class="absolute inset-0 w-full h-full object-contain transition-transform duration-300 ease-out hover:scale-105" />
+							<Heading htmlheading="h4" size="h4" stylingclasses="text-primary">
+								Fjerne spøgelsesnet for at beskytte marineliv og havmiljøet
+							</Heading>
+							<p class="text-primary font-body text-[0.9rem] lg:text-[1rem]">Præcis kortlægning af spøgelsesnet sikrer effektiv fjernelse og beskytter havets økosystem.</p>
+						</div>
+
+						<!-- Card 2 -->
+					<div class="relative rounded-3xl p-6 lg:p-8 flex flex-col justify-center items-center text-center space-y-3 min-h-80 lg:min-h-[380px] pt-28 lg:pt-32 w-full lg:w-[520px] self-end overflow-visible">
+						<img src="/card2.svg" alt="Registrere og lokalisere" class="absolute inset-0 w-full h-full object-contain transition-transform duration-300 ease-out hover:scale-105" />
+							<Heading htmlheading="h4" size="h4" stylingclasses="text-primary">
+								Registrere og lokalisere spørgelsesnet
+							</Heading>
+							<p class="text-primary font-body text-[0.9rem] lg:text-[1rem]">Præcis kortlægning af spøgelsesnet sikrer effektiv fjernelse og beskytter havets økosystem.</p>
+						</div>
+
+						<!-- Card 3 -->
+					<div class="relative rounded-3xl p-6 lg:p-8 flex flex-col justify-center items-center text-center space-y-3 min-h-80 lg:min-h-[380px] pt-28 lg:pt-32 w-full lg:w-[520px] self-start overflow-visible">
+						<img src="/card3.svg" alt="Oplyse og involvere" class="absolute inset-0 w-full h-full object-contain transition-transform duration-300 ease-out hover:scale-105" />
+							<Heading htmlheading="h4" size="h4" stylingclasses="text-primary">
+								Oplyse og involvere samfundet
+							</Heading>
+							<p class="text-primary font-body text-[0.9rem] lg:text-[1rem]">Ved at oplyse og inddrage samfundet skaber vi bevidsthed om spøgelsesnet og inspirerer til handling for et renere hav.</p>
+						</div>
+
+						<!-- Card 4 -->
+					<div class="relative rounded-3xl p-6 lg:p-8 flex flex-col justify-center items-center text-center space-y-3 min-h-80 lg:min-h-[380px] pt-28 lg:pt-32 w-full lg:w-[520px] self-end overflow-visible">
+						<img src="/card4.svg" alt="Samarbejde med relevante aktører" class="absolute inset-0 w-full h-full object-contain transition-transform duration-300 ease-out hover:scale-105" />
+							<Heading htmlheading="h4" size="h4" stylingclasses="text-primary">
+								Samarbejde med relevante aktører
+							</Heading>
+							<p class="text-primary font-body text-[0.9rem] lg:text-[1rem]">Gennem samarbejde med myndigheder, forskere og erhvervsliv sikrer vi en langsigtet løsning på problemet med spøgelsesnet.</p>
+						</div>
+					</div>
 			</div>
 		</section>
 	</main>
